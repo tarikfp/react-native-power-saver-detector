@@ -1,4 +1,6 @@
 # React Native Power Saver Checker
+[![npm version](https://img.shields.io/npm/v/react-native-power-saver-checker.svg)](https://www.npmjs.com/package/react-native-power-saver-checker)
+
 
 `react-native-power-saver-checker` is a React Native library that provides methods to check and navigate to power-saving mode settings on both Android and iOS platforms.
 
