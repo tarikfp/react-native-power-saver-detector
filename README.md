@@ -1,4 +1,4 @@
-# React Native Power Saver Checker
+# React Native Power Saver
 
 [![npm version](https://img.shields.io/npm/v/react-native-power-saver.svg)](https://www.npmjs.com/package/react-native-power-saver)
 
