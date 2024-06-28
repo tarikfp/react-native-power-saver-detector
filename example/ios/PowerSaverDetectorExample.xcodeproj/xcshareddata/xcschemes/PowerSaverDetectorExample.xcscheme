@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "PowerSaverCheckerExample.app"
-               BlueprintName = "PowerSaverCheckerExample"
-               ReferencedContainer = "container:PowerSaverCheckerExample.xcodeproj">
+               BuildableName = "PowerSaverDetectorExample.app"
+               BlueprintName = "PowerSaverDetectorExample"
+               ReferencedContainer = "container:PowerSaverDetectorExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "PowerSaverCheckerExampleTests.xctest"
-               BlueprintName = "PowerSaverCheckerExampleTests"
-               ReferencedContainer = "container:PowerSaverCheckerExample.xcodeproj">
+               BuildableName = "PowerSaverDetectorExampleTests.xctest"
+               BlueprintName = "PowerSaverDetectorExampleTests"
+               ReferencedContainer = "container:PowerSaverDetectorExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "PowerSaverCheckerExample.app"
-            BlueprintName = "PowerSaverCheckerExample"
-            ReferencedContainer = "container:PowerSaverCheckerExample.xcodeproj">
+            BuildableName = "PowerSaverDetectorExample.app"
+            BlueprintName = "PowerSaverDetectorExample"
+            ReferencedContainer = "container:PowerSaverDetectorExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "PowerSaverCheckerExample.app"
-            BlueprintName = "PowerSaverCheckerExample"
-            ReferencedContainer = "container:PowerSaverCheckerExample.xcodeproj">
+            BuildableName = "PowerSaverDetectorExample.app"
+            BlueprintName = "PowerSaverDetectorExample"
+            ReferencedContainer = "container:PowerSaverDetectorExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

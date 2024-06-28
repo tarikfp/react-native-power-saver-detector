@@ -1,6 +1,6 @@
 {
-  "name": "react-native-power-saver",
-  "version": "0.2.1",
+  "name": "react-native-power-saver-detector",
+  "version": "0.1.0-local-05",
   "description": "React Native library that provides methods to check and navigate to power-saving mode settings on both Android and iOS platforms.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-power-saver-example",
+    "example": "yarn workspace react-native-power-saver-detector-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tarikfp/react-native-power-saver.git"
+    "url": "git+https://github.com/tarikfp/react-native-power-saver-detector.git"
   },
   "author": "tarikfp <tarikdotcom@gmail.com> (https://github.com/tarikfp)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tarikfp/react-native-power-saver/issues"
+    "url": "https://github.com/tarikfp/react-native-power-saver-detector/issues"
   },
-  "homepage": "https://github.com/tarikfp/react-native-power-saver#readme",
+  "homepage": "https://github.com/tarikfp/react-native-power-saver-detector#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -68,7 +68,7 @@
     "prettier": "^3.0.3",
     "react": "18.2.0",
     "react-native": "0.74.2",
-    "react-native-builder-bob": "^0.20.0",
+    "react-native-builder-bob": "^0.23.2",
     "release-it": "^15.0.0",
     "turbo": "^1.10.7",
     "typescript": "^5.2.2"

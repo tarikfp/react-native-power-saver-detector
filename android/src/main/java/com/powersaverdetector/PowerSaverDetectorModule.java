@@ -1,4 +1,4 @@
-package com.powersaverchecker;
+package com.powersaverdetector;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,25 +13,25 @@ import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-@ReactModule(name = PowerSaverCheckerModule.NAME)
-public class PowerSaverCheckerModule extends ReactContextBaseJavaModule {
-  public static final String NAME = "PowerSaverChecker";
+@ReactModule(name = PowerSaverDetectorModule.NAME)
+public class PowerSaverDetectorModule extends ReactContextBaseJavaModule {
+  public static final String NAME = "PowerSaverDetector";
   private static ReactApplicationContext reactContext;
 
 
-  public PowerSaverCheckerModule(ReactApplicationContext context) {
+  public PowerSaverDetectorModule(ReactApplicationContext context) {
     super(context);
     reactContext = context;
-
   }
 
-  @NonNull
   @Override
+  @NonNull
   public String getName() {
     return NAME;
   }
 
-  @ReactMethod(isBlockingSynchronousMethod = true)
+
+ @ReactMethod(isBlockingSynchronousMethod = true)
   public Boolean isPowerSaverModeEnabledSync() {
     PowerManager powerManager = (PowerManager) reactContext.getSystemService(Context.POWER_SERVICE);
     if (powerManager == null) {
@@ -80,5 +80,4 @@ public class PowerSaverCheckerModule extends ReactContextBaseJavaModule {
       e.printStackTrace();
     }
   }
-
 }

@@ -1,4 +1,4 @@
-export interface IPowerSaverChecker {
+export interface IPowerSaverDetector {
   /**
    * Checks if Low Power Mode is enabled on iOS.
    *

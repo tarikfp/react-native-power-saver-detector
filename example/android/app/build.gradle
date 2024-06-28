@@ -74,9 +74,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.powersavercheckerexample"
+    namespace "com.powersaverdetectorexample"
     defaultConfig {
-        applicationId "com.powersavercheckerexample"
+        applicationId "com.powersaverdetectorexample"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

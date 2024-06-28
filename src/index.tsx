@@ -1,5 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
-import type { IPowerSaverChecker } from './types';
+import type { IPowerSaverDetector } from './types';
 
 const LINKING_ERROR =
   `The package 'react-native-power-saver' doesn't seem to be linked. Make sure: \n\n` +
@@ -7,9 +7,9 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const PowerSaverCheckerModule: IPowerSaverChecker =
-  NativeModules.PowerSaverChecker
-    ? NativeModules.PowerSaverChecker
+const PowerSaverDetectorModule: IPowerSaverDetector =
+  NativeModules.PowerSaverDetector
+    ? NativeModules.PowerSaverDetector
     : new Proxy(
         {},
         {
@@ -22,7 +22,7 @@ const PowerSaverCheckerModule: IPowerSaverChecker =
 const isLowPowerModeEnabled = async (): Promise<boolean | null> => {
   if (Platform.OS === 'ios') {
     try {
-      const isEnabled = await PowerSaverCheckerModule.isLowPowerModeEnabled();
+      const isEnabled = await PowerSaverDetectorModule.isLowPowerModeEnabled();
       return isEnabled;
     } catch (error) {
       throw new Error(String(error));
@@ -35,7 +35,7 @@ const isLowPowerModeEnabled = async (): Promise<boolean | null> => {
 
 const isPowerSaverModeEnabledSync = (): boolean | null => {
   if (Platform.OS === 'android') {
-    return PowerSaverCheckerModule.isPowerSaverModeEnabledSync();
+    return PowerSaverDetectorModule.isPowerSaverModeEnabledSync();
   } else {
     console.warn(
       'isPowerSaverModeEnabledSync is not available on this platform.'
@@ -47,7 +47,7 @@ const isPowerSaverModeEnabledSync = (): boolean | null => {
 const isPowerSaverModeEnabled = async (): Promise<boolean | null> => {
   if (Platform.OS === 'android') {
     try {
-      const isEnabled = await PowerSaverCheckerModule.isPowerSaverModeEnabled();
+      const isEnabled = await PowerSaverDetectorModule.isPowerSaverModeEnabled();
       return isEnabled;
     } catch (error) {
       throw new Error(String(error));
@@ -60,13 +60,13 @@ const isPowerSaverModeEnabled = async (): Promise<boolean | null> => {
 
 const openPowerSaverSettings = (): void => {
   if (Platform.OS === 'android') {
-    PowerSaverCheckerModule.openPowerSaverSettings();
+    PowerSaverDetectorModule.openPowerSaverSettings();
   } else {
     console.warn('openPowerSaverSettings is not available on this platform.');
   }
 };
 
-export const PowerSaverChecker: IPowerSaverChecker = {
+export const PowerSaverDetector: IPowerSaverDetector = {
   isLowPowerModeEnabled,
   isPowerSaverModeEnabledSync,
   isPowerSaverModeEnabled,

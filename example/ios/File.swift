@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  PowerSaverCheckerExample
+//  PowerSaverDetectorExample
 //
 
 import Foundation

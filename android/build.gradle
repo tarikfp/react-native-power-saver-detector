@@ -25,11 +25,11 @@ if (isNewArchitectureEnabled()) {
 }
 
 def getExtOrDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties["PowerSaverChecker_" + name]
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties["PowerSaverDetector_" + name]
 }
 
 def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["PowerSaverChecker_" + name]).toInteger()
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["PowerSaverDetector_" + name]).toInteger()
 }
 
 def supportsNamespace() {
@@ -43,7 +43,7 @@ def supportsNamespace() {
 
 android {
   if (supportsNamespace()) {
-    namespace "com.powersaverchecker"
+    namespace "com.powersaverdetector"
 
     sourceSets {
       main {

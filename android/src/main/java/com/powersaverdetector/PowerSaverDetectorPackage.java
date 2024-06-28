@@ -1,4 +1,4 @@
-package com.powersaverchecker;
+package com.powersaverdetector;
 
 import androidx.annotation.NonNull;
 
@@ -11,12 +11,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class PowerSaverCheckerPackage implements ReactPackage {
+public class PowerSaverDetectorPackage implements ReactPackage {
   @NonNull
   @Override
   public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
-    modules.add(new PowerSaverCheckerModule(reactContext));
+    modules.add(new PowerSaverDetectorModule(reactContext));
     return modules;
   }
 

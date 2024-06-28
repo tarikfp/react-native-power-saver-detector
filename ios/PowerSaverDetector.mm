@@ -1,8 +1,8 @@
-#import "PowerSaverChecker.h"
+#import "PowerSaverDetector.h"
 #import <React/RCTLog.h>
 #import <React/RCTUtils.h>
 
-@implementation PowerSaverChecker
+@implementation PowerSaverDetector
 
 RCT_EXPORT_MODULE();
 

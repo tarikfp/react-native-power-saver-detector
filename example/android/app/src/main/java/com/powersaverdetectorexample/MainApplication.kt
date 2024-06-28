@@ -1,4 +1,4 @@
-package com.powersavercheckerexample
+package com.powersaverdetectorexample
 
 import android.app.Application
 import com.facebook.react.PackageList
