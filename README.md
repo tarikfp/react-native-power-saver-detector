@@ -1,7 +1,15 @@
-# React Native Power Saver Detector
-`react-native-power-saver-detector` is a React Native library that provides methods for checking `Low Power Mode` on iOS and `Power Saver/Battery Saver` Mode on Android, as well as navigating to the `Power Saver/Battery Saver` Mode settings on Android.
+<h1 align="center">
+  React Native Power Saver Detector
+</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/github/package-json/v/tarikfp/react-native-power-saver-detector" alt="Version">
+</p>
 
 ## Overview
+
+`react-native-power-saver-detector` is a React Native library that provides methods for checking `Low Power Mode` on iOS and `Power Saver/Battery Saver` Mode on Android, as well as navigating to the `Power Saver/Battery Saver` Mode settings on Android.
+
 <table>
   <tr>
     <td style="text-align: center;"><b>Android</b></td>
