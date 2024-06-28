@@ -1,7 +1,7 @@
 {
   "name": "react-native-power-saver-detector",
   "version": "0.1.1",
-  "description": "React Native library that provides methods to check and navigate to power-saving mode settings on both Android and iOS platforms.",
+  "description": "React Native library that provides methods for checking Low Power Mode on iOS and Power Saver Mode on Android, as well as navigating to the Power Saver Mode settings on Android.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",

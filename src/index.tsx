@@ -47,7 +47,8 @@ const isPowerSaverModeEnabledSync = (): boolean | null => {
 const isPowerSaverModeEnabled = async (): Promise<boolean | null> => {
   if (Platform.OS === 'android') {
     try {
-      const isEnabled = await PowerSaverDetectorModule.isPowerSaverModeEnabled();
+      const isEnabled =
+        await PowerSaverDetectorModule.isPowerSaverModeEnabled();
       return isEnabled;
     } catch (error) {
       throw new Error(String(error));
