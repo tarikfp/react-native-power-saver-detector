@@ -1,17 +1,17 @@
 # React Native Power Saver Checker
 
-[![npm version](https://img.shields.io/npm/v/react-native-power-saver-checker.svg)](https://www.npmjs.com/package/react-native-power-saver-checker)
+[![npm version](https://img.shields.io/npm/v/react-native-power-saver.svg)](https://www.npmjs.com/package/react-native-power-saver)
 
-`react-native-power-saver-checker` is a React Native library that provides methods for checking Low Power Mode on iOS and Power Saver Mode on Android, as well as navigating to the Power Saver Mode settings on Android.
+`react-native-power-saver` is a React Native library that provides methods for checking Low Power Mode on iOS and Power Saver Mode on Android, as well as navigating to the Power Saver Mode settings on Android.
 
 ## Installation
 
 To install the library, use either npm or yarn:
 
 ```sh
-npm install react-native-power-saver-checker
+npm install react-native-power-saver
 # or
-yarn add react-native-power-saver-checker
+yarn add react-native-power-saver
 ```
 
 ### Linking
@@ -19,7 +19,7 @@ yarn add react-native-power-saver-checker
 For React Native 0.60 and above, the library should be automatically linked. For older versions, you will need to link the library manually:
 
 ```sh
-react-native link react-native-power-saver-checker
+react-native link react-native-power-saver
 ```
 
 For iOS, don't forget to run `pod install` after linking the library:
@@ -48,7 +48,7 @@ Checks if Low Power Mode is enabled on iOS.
 #### Example
 
 ```typescript
-import { PowerSaverChecker } from 'react-native-power-saver-checker';
+import { PowerSaverChecker } from 'react-native-power-saver';
 
 PowerSaverChecker.isLowPowerModeEnabled().then((isEnabled) => {
   console.log('Low Power Mode enabled:', isEnabled);
@@ -66,7 +66,7 @@ Synchronously checks if Power Saver Mode is enabled on Android.
 #### Example
 
 ```typescript
-import { PowerSaverChecker } from 'react-native-power-saver-checker';
+import { PowerSaverChecker } from 'react-native-power-saver';
 
 const isEnabled = PowerSaverChecker.isPowerSaverModeEnabledSync();
 console.log('Power Saver Mode enabled (sync):', isEnabled);
@@ -83,7 +83,7 @@ Asynchronously checks if Power Saver Mode is enabled on Android.
 #### Example
 
 ```typescript
-import { PowerSaverChecker } from 'react-native-power-saver-checker';
+import { PowerSaverChecker } from 'react-native-power-saver';
 
 PowerSaverChecker.isPowerSaverModeEnabled().then((isEnabled) => {
   console.log('Power Saver Mode enabled (async):', isEnabled);
@@ -97,7 +97,7 @@ Navigates to the Power Saver Mode settings on Android.
 #### Example
 
 ```typescript
-import { PowerSaverChecker } from 'react-native-power-saver-checker';
+import { PowerSaverChecker } from 'react-native-power-saver';
 
 PowerSaverChecker.openPowerSaverSettings();
 ```
